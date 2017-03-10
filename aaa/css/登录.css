@@ -9,11 +9,23 @@ body,
   height: 100%;
   background: auto;
 }
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+#bg img {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
 .wrapper {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  background-image: url("../yc/denglu/a1.png");
-  background-size: 100%;
 }
 .wrapper .Icon {
   width: 100%;

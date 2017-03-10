@@ -14,10 +14,22 @@ html{
 html,body,.wrapper{
      .full(100%,100%,auto);
 }
+#bg
+{
+    position : fixed;
+    left : 0;
+    top : 0;
+    z-index: -1;
+    
+    .full(100% , 100%, none);
+    
+    img
+    {
+        .full(100% , 100% , none);
+    }
+}
 .wrapper{
      .box(vertical);
-    background-image: url("../yc/denglu/a1.png");
-    background-size: 100%;
     .Icon{
         .full(100%,auto,none);
       //  .box(vertical);
