@@ -1,0 +1,138 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: auto;
+}
+.wrapper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  background-image: url("../yc/denglu/a1.png");
+  background-size: 100%;
+}
+.wrapper .Icon {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.wrapper .Icon img {
+  width: 100px;
+  height: auto;
+  margin-top: 66px;
+  margin-bottom: 10px;
+}
+.wrapper .Icon span {
+  font-size: 17px;
+  color: #666666;
+}
+.wrapper .tele {
+  text-align: center;
+  margin-bottom: 1.6rem;
+  padding-left: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrapper .tele .icon {
+  width: 3.5rem;
+  height: auto;
+  background: none;
+  margin-right: 1.2rem;
+}
+.wrapper .tele .icon img {
+  width: 35px;
+  height: auto;
+}
+.wrapper .tele .text {
+  -webkit-box-flex: 1;
+  padding-right: 3rem;
+}
+.wrapper .tele .text input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #FF7D1B;
+  outline: none;
+}
+.wrapper .Pwd {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  padding-left: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrapper .Pwd .icon {
+  width: 3.5rem;
+  height: auto;
+  background: none;
+  margin-right: 1.2rem;
+}
+.wrapper .Pwd .icon img {
+  width: 35px;
+  height: auto;
+}
+.wrapper .Pwd .text {
+  -webkit-box-flex: 1;
+  padding-right: 3rem;
+}
+.wrapper .Pwd .text input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #FF7D1B;
+  outline: none;
+}
+.wrapper .Pwd .eye {
+  width: 25px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+.wrapper .login {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 20px;
+}
+.wrapper .login .log {
+  padding: 10px;
+}
+.wrapper .login .log span {
+  display: inline-block;
+  width: 100%;
+  height: 3.8rem;
+  background: #ff7d1b;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+.wrapper .login .log span a {
+  font-size: 18px;
+  line-height: 3.8rem;
+  color: white;
+}
+.wrapper .lian {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-left: 10px;
+  border: none;
+  padding-right: 10px;
+  color: #507daf;
+}
+.wrapper .lian .zhu {
+  float: left;
+}
+.wrapper .lian .mi {
+  float: right;
+}
