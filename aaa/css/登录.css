@@ -117,7 +117,7 @@ body,
   margin-top: 20px;
 }
 .wrapper .login .log {
-  padding: 10px;
+  padding: 0px 40px;
 }
 .wrapper .login .log span {
   display: inline-block;
@@ -137,10 +137,11 @@ body,
   width: 100%;
   height: auto;
   background: none;
-  padding-left: 10px;
+  padding-left: 40px;
   border: none;
-  padding-right: 10px;
+  padding-right: 40px;
   color: #507daf;
+  margin-top: 5px;
 }
 .wrapper .lian .zhu {
   float: left;

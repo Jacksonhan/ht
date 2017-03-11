@@ -161,6 +161,9 @@ html {
 .wrapper section .Box .user_news {
   margin-top: 1rem;
 }
+.wrapper section .Box .user_news p {
+  padding-top: 0.4rem;
+}
 .wrapper section .Box .user_news p img {
   width: 1.4rem;
 }
@@ -171,4 +174,5 @@ html {
 .wrapper section .Box .user_news p:nth-child(2) {
   margin-top: 0.4rem;
   display: inline-block;
+  padding-bottom: 0.5rem;
 }
