@@ -1,0 +1,264 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+.wrapper,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: auto;
+}
+.wrapper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrapper header {
+  width: 100%;
+  height: 4.2rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 4.2rem;
+  border-bottom: 1px solid #c0c0c0;
+}
+.wrapper header .le {
+  width: 1rem;
+  height: 3rem;
+  background: none;
+  margin-left: 1rem;
+}
+.wrapper header .le img {
+  width: 100%;
+  height: auto;
+}
+.wrapper header .ri {
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+.wrapper header .cen {
+  -webkit-box-flex: 1;
+  font-size: 1.8rem;
+  color: #2e2e2e;
+}
+.wrapper section {
+  -webkit-box-flex: 1;
+  overflow-y: auto;
+}
+.wrapper section::-webkit-scrollbar {
+  width: 0;
+}
+.wrapper section .Goods_pics {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.wrapper section .Goods_pics h3 {
+  line-height: 3.5rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.wrapper section .Goods_pics h3 span {
+  font-size: 1.2rem;
+  color: #bababa;
+}
+.wrapper section .Goods_pics .Outs {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.wrapper section .Goods_pics .Outs div {
+  width: 6rem;
+  height: auto;
+  background: none;
+  margin-right: 1rem;
+}
+.wrapper section .Goods_pics .Outs div img {
+  width: 100%;
+  height: auto;
+}
+.wrapper section .Goods_pics .Out {
+  padding-left: 1rem;
+  background: white;
+  border-bottom: 1px solid #F0F0F0;
+}
+.wrapper section .Goods_pics .Out .Big_box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.5rem;
+}
+.wrapper section .Goods_pics .Out .Big_box .name {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+}
+.wrapper section .Goods_pics .Out .Big_box .text {
+  -webkit-box-flex: 1;
+}
+.wrapper section .Goods_pics .Out .Big_box .text input {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+}
+.wrapper section .Goods_pics .Out .Big_box .Back {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  padding-right: 1rem;
+}
+.wrapper section .Goods_pics .Out .Big_box .Back img {
+  width: 1rem;
+  height: auto;
+}
+.wrapper section .Goods_pics .Out .Big_box .Back span {
+  color: #BABABA;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+.wrapper section .Argument {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+}
+.wrapper section .Argument h3 {
+  line-height: 3.5rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.wrapper section .Argument .Out {
+  padding-left: 1rem;
+  background: white;
+}
+.wrapper section .Argument .Out .Big_box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.wrapper section .Argument .Out .Big_box .name {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+}
+.wrapper section .Argument .Out .Big_box .text {
+  -webkit-box-flex: 1;
+}
+.wrapper section .Argument .Out .Big_box .text input {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+}
+.wrapper section .Argument .Out .Big_box .Back {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  padding-right: 1rem;
+}
+.wrapper section .Argument .Out .Big_box .Back img {
+  width: 1rem;
+  height: auto;
+}
+.wrapper section .Goods_classsify {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #F2F2F2;
+}
+.wrapper section .Goods_classsify h3 {
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1rem;
+}
+.wrapper section .Goods_classsify .Table {
+  border: 1px solid black;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-radius: 0.8rem;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all .Tab_le {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid black;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all .Tab_le .Out {
+  padding-left: 1rem;
+  background: white;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all .Tab_le .Out .Big_box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.5rem;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all .Tab_le .Out .Big_box .name {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all .Tab_le .Out .Big_box .text {
+  -webkit-box-flex: 1;
+}
+.wrapper section .Goods_classsify .Table .Tab_le_all .Tab_le .Out .Big_box .text input {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+}
+.wrapper section .Goods_classsify .Table .Tab_ri {
+  width: 3.3rem;
+  height: auto;
+  background: #ffffff;
+  border-left: 1px solid black;
+  line-height: 14rem;
+  text-align: center;
+}
+.wrapper section .Goods_classsify .Table .Tab_ri img {
+  width: 1.5rem;
+  height: auto;
+}
+.wrapper section .Add_out {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.wrapper section .Add_out .Add {
+  width: 100%;
+  height: auto;
+  background: #f0f0f0;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+.wrapper section .Add_out .Add img {
+  width: 1.6rem;
+  height: auto;
+}

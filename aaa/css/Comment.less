@@ -1,0 +1,143 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@a:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @a;
+}
+html {
+    font-size: 62.5%;
+}
+.wrapper,
+body,
+html {
+    .full(100%,100%,auto);
+}
+.wrapper{
+     .box(vertical);
+      header{
+          .full(100%,4.2rem,#f7f7f7);
+          .box;
+          text-align: center;
+          line-height: 4.2rem;
+          border-bottom: 1px solid #c0c0c0;
+          .le{
+               .full(1rem,3rem,none);
+               margin-left: 1rem;
+               img{
+                    width: 100%;
+                    height: auto;
+               }
+          }
+           .ri{
+               .full(2rem,3rem,none);
+               margin-right: 1rem;
+               img{
+                    width: 100%;
+                    height: auto;
+               }
+          }
+          .cen{
+               -webkit-box-flex: 1;
+               font-size: 16px;
+          }
+     }
+     footer{
+          .full(100%,7.5rem,#f3f3f3);
+     }
+     section{
+          -webkit-box-flex: 1;
+          background: #f3f3f3;
+          overflow-y: auto;
+          &::-webkit-scrollbar{
+               width: 0;
+          }
+          .nav{
+               .full(100%,auto,white); 
+               margin-bottom: 1rem;              
+               ul{
+                   .box;
+                   text-align: center;
+                    li{
+                        -webkit-box-flex: 1;
+                        line-height: 4rem;
+                        img{
+                             width: 0.8rem;
+                             height: auto;
+                             margin-left: 5px; 
+                        }
+                        .shu{
+                             width: 0.1rem;
+                             height: 2.5rem;
+                             margin-left: 1rem;
+                        }
+                    }
+                    .Click{
+                         color: #FF7D1B;
+                    }
+               }
+          }
+         .Content{
+              .full(100%,auto,white);
+               margin-top: 0.8rem;
+              h4{
+                   line-height: 3rem;
+                   padding-left: 1rem;
+                   border-bottom: 1px solid #F2F2F2;
+              }
+              .Out{
+                   padding-left: 1rem;
+                   padding-top: 1rem;
+                    border-bottom: 1px solid #F2F2F2;
+                   .Details{
+                        div{
+                            .box;
+                            position: relative;
+                            span{
+                                 color: #666666;
+                                 line-height: 2rem;
+                            }
+                            div{
+                                position: absolute;
+                                top: 0.1rem;
+                                right: 1rem;
+                               // float: right;
+                                 img{
+                                      width: 1rem;
+                                      height: auto;
+                                 }
+                            }
+                        }
+                   }
+                   .Introduce{
+                        padding-bottom: 1rem;                     
+                        p{
+                             line-height: 1.5rem;
+                        }
+                   }
+                   
+              }
+              .Bom{
+                   .full(100%,auto,none);
+                  padding-bottom: 0.5rem;
+                  padding-top: 0.5rem;
+                   span{
+                        display: inline-block;
+                        float: right;
+                        margin-right: 1rem;
+                        border-radius: 0.6rem;                      
+                        width: 6rem;
+                        height: 2rem;
+                        text-align: center;
+                        line-height: 2rem;
+                        color: #FF7D1B;
+                        border: 1px solid #FF7D1B;
+                        clear: both;
+                   }
+              }
+         }
+     }
+}
