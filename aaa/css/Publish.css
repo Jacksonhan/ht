@@ -34,11 +34,11 @@ html {
   height: auto;
 }
 .wrapper header .ri {
-  width: 3rem;
+  width: auto;
   height: 3rem;
   background: none;
   margin-right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .wrapper header .cen {
   -webkit-box-flex: 1;
