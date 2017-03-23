@@ -1,0 +1,76 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@a:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @a;
+}
+html {
+    font-size: 62.5%;
+}
+.wrapper,
+body,
+html {
+    .full(100%,100%,auto);
+}
+.wrapper{
+     .box(vertical);
+     header {
+        .full(100%,4rem,#f7f7f7);
+        .box;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+        .le {
+            .full(15px,auto,none);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .cen {
+            .full(100%,auto,none);
+            text-align: center;
+            font-size: 18px;
+            line-height: 4rem;
+            span {
+                color: #262626;
+                //font-weight: bold;
+            }
+        }
+    }
+    section{
+         -webkit-box-flex: 1;
+         background: #F2F2F2;
+         .Success{
+              .full(100%,auto,none);
+              .box(vertical);
+              text-align: center;
+              margin-top: 6.8rem;
+              img{
+                   width: 10rem;
+                   height: auto;
+                   margin-bottom: 2.5rem;
+              }
+              span{
+                   font-size: 2.2rem;
+              }
+         }
+         .Thinking{
+              .full(100%,auto,none);
+              line-height: 2.5rem;
+              p{
+                   text-indent: 2rem;
+                   font-size: 1.4rem;
+                   padding-left: 1.7rem;
+                   padding-right: 2.6rem;
+                   color: #b8b8b8;
+              }
+         }
+    }
+}

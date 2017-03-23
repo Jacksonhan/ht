@@ -1,0 +1,93 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-12 {
+  font-size: 12px;
+  color: #b9b9b9; }
+
+.spc-11 {
+  font-size: 20px;
+  color: #76bff2; }
+
+html, body, .warp {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.warp header {
+  width: 100%;
+  height: 35px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .warp header .header_left {
+    width: 30px;
+    height: 35px;
+    background: none;
+    line-height: 35px;
+    text-align: center; }
+  .warp header .header_center {
+    -webkit-box-flex: 1;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold; }
+  .warp header .header_right {
+    width: 52px;
+    height: 35px;
+    background: none;
+    line-height: 35px;
+    text-align: center; }
+.warp section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2; }
+  .warp section .self {
+    width: 100%;
+    height: 245px;
+    background: none;
+    padding-left: 9px;
+    box-sizing: border-box; }
+    .warp section .self .self_top {
+      width: 100%;
+      height: 25px;
+      background: none;
+      line-height: 25px;
+      font-weight: bold; }
+    .warp section .self .self_bottom {
+      width: 100%;
+      height: 220px;
+      background: none; }
+      .warp section .self .self_bottom textarea {
+        border-radius: 5px; }
+  .warp section .photo {
+    width: 100%;
+    height: 95px;
+    background: none;
+    padding-left: 9px;
+    box-sizing: border-box; }
+    .warp section .photo .photo_top {
+      width: 100%;
+      height: 27px;
+      background: none;
+      line-height: 27px;
+      font-weight: bold; }
+    .warp section .photo .photo_bottom {
+      width: 100%;
+      height: 68px;
+      background: none; }
+      .warp section .photo .photo_bottom span {
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        background: #f2f2fa;
+        text-align: center;
+        border: 2px solid #bfbfbf;
+        border-radius: 5px;
+        line-height: 65px; }
+
+/*# sourceMappingURL=Refuse%20to%20reason.css.map */

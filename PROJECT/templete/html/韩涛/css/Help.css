@@ -1,0 +1,178 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+.wrapper,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: auto;
+}
+.wrapper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrapper header {
+  width: 100%;
+  height: 4.2rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 4.2rem;
+  border-bottom: 1px solid #c0c0c0;
+}
+.wrapper header .le {
+  width: 1rem;
+  height: 3rem;
+  background: none;
+  margin-left: 1rem;
+}
+.wrapper header .le img {
+  width: 100%;
+  height: auto;
+}
+.wrapper header .ri {
+  width: 2rem;
+  height: 3rem;
+  background: none;
+  margin-right: 1rem;
+}
+.wrapper header .ri img {
+  width: 100%;
+  height: auto;
+}
+.wrapper header .cen {
+  -webkit-box-flex: 1;
+  font-size: 16px;
+}
+.wrapper footer {
+  width: 100%;
+  height: 5.1rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-top: 1px solid #F2F2F2;
+}
+.wrapper footer .Cost {
+  -webkit-box-flex: 1;
+  line-height: 5rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+.wrapper footer .Cost span:nth-child(3) {
+  color: #FF7D1B;
+}
+.wrapper footer .But {
+  width: 10rem;
+  height: 5rem;
+  background: #ff7d1b;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 1.6rem;
+  color: white;
+}
+.wrapper footer .But span {
+  font-weight: bold;
+}
+.wrapper section {
+  -webkit-box-flex: 1;
+  background: #F2F2F2;
+  padding-bottom: 16rem;
+  overflow-y: auto;
+}
+.wrapper section::-webkit-scrollbar {
+  width: 0;
+}
+.wrapper section .Hint {
+  width: 100%;
+  height: auto;
+  background: #f2f2f2;
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+.wrapper section .Hint span .State {
+  color: #ffa064;
+}
+.wrapper section .Out {
+  padding-left: 1rem;
+  background: white;
+}
+.wrapper section .Out .Big_box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.wrapper section .Out .Big_box .name {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+}
+.wrapper section .Out .Big_box .text {
+  -webkit-box-flex: 1;
+}
+.wrapper section .Out .Big_box .text input {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+}
+.wrapper section .Out .Big_box .Back {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  padding-right: 1rem;
+}
+.wrapper section .Out .Big_box .Back img {
+  width: 1rem;
+  height: auto;
+}
+.wrapper section .Show {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border: 1px solid #F2F2F2;
+  border: none;
+}
+.wrapper section .Show .Pics {
+  margin-top: 2rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrapper section .Show .Pics div {
+  margin-right: 0.8rem;
+  width: 7rem;
+  height: auto;
+  background: #ffffff;
+}
+.wrapper section .Show .Pics div img {
+  width: 7rem;
+  height: auto;
+}
+.wrapper section .Box {
+  padding-left: 1.5rem;
+  background: white;
+}
+.wrapper section .Box .user_news {
+  margin-top: 1rem;
+}
+.wrapper section .Box .user_news p {
+  padding-top: 0.4rem;
+}
+.wrapper section .Box .user_news p img {
+  width: 1.4rem;
+}
+.wrapper section .Box .user_news p span {
+  display: inline-block;
+  margin-left: 0.9rem;
+}
+.wrapper section .Box .user_news p:nth-child(2) {
+  margin-top: 0.4rem;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}

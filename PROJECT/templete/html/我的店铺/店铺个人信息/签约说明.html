@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>签约说明 - 优橙</title>
+	<link rel="stylesheet" href="../../../assets/public/css/public.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<style>
+		section
+		{
+			width : 100%;
+			height : 100%;
+		}
+		#main
+		{
+			margin-top : 100px;
+		}
+		#main .submit-btn-container
+		{
+			margin : 10px;
+		}
+		#main .submit-btn-container button
+		{
+			width : 100%;
+			padding : 5px 0;
+			border : none;
+			border-radius: 5px;
+			background : #ff7f1d;
+			color : #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper" class="full box vertical">
+		<header class="full-w rem-h-4 bg-header border-bottom-default box horizontal padding-h border-box box-align-center box-pack-center">
+			<img src="../../../assets/public/images/header-menu.png" width="18px" alt="">
+			<span class="header-value flex-1 fs-18 color-333 text-center block text-ellipsis">签约说明</span>
+			<div class="header-right" style="width : 18px;">
+				<!-- <a href="">
+					<img src="./assets/images/二维码名片-分享状态_03.gif" width="18" alt="">
+				</a> -->
+			</div>
+		</header>
+		<section class="full flex-1 overflow-auto-y overflow-hide-x">
+			<div id="main">
+				<p>
+					<input type="checkbox" name="" id="">
+					<span>我已仔细阅读签约条款</span>
+				</p>
+				<div class="submit-btn-container">
+					<button id="qy_btn">我想签约</button>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="../../../assets/public/js/hurdle.js"></script>
+<script>
+	var photo = new photoHurdle("qy_btn").popup("优橙客服会在5个工作日内联系您！").start();
+</script>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>首页 - 优橙</title>
+	<script src="../bower_components/angular/angular-1.3.0.js"></script>
+    <script src="../bower_components/angular/angular-ui-router.min.js"></script>
+    <script src="../bower_components/angular/app.js"></script>
+	<link rel="stylesheet" href="./assets/public/css/public.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	
+</head>
+<body ng-app="myApp">
+	<div id="wrapper" class="full box vertical" ui-view>
+		<iframe src="./assets/public/header.htm" frameborder="0" scrolling="no" class="full-w" style="height : 45px;"></iframe>
+		<section class="box vertical flex-1 full overflow-auto-y overflow-hide-x border-box bg-default">
+			<div class="section-profile padding-v padding-h border-box box horizontal border-bottom-default bg-white">
+				<div class="section-profile-left-portrait rem-w-7 rem-h-7 box vertical box-pack-center box-align-center text-center">
+					<a href="" class="block">
+						<img src="./assets/images/a_07.png" alt="">
+						<span class="color-333 block">Eminem</span>
+					</a>
+				</div>
+				<div class="section-profile-right-stop box vertical">
+					<h1 class="section-profile-right-shop-name text-normal" ui-sref="Names">
+						XXXX北京旗舰店
+					</h1>
+					<div class="flex-1"></div>
+					<h1 class="section-profile-right-shop-status text-normal">
+						店铺状态:
+						<span class="value color-red">停业</span>
+					</h1>
+				</div>
+				<div class="section-profile-right-into padding-h flex-1 box vertical box-pack-center text-right">
+					<a href="" class="inline-block">
+						<img src="./assets/images/a_10.png" />
+					</a>
+				</div>
+			</div>
+			<div class="section-start bg-white">
+				<div class="section-start-up">
+					<button class="section-start-start-up-btn">
+						开始工作 Start-up
+					</button>
+				</div>
+				<div class="section-start-nav">
+					<div class="section-start-nav-rows box horizontal">
+						<dl class="flex-1 box horizontal" ui-sref="Fans">
+							<dd>
+								<img src="./assets/images/a_14.png" alt="">
+							</dd>
+							<dt class="box vertical">
+								<span class="title block">粉丝</span>
+								<div class="flex-1"></div>
+								<span class="value block">120</span>
+							</dt>
+						</dl>
+						<dl class="flex-1 box horizontal">
+							<dd>
+								<img src="./assets/images/a_16.png" alt="">
+							</dd>
+							<dt class="box vertical">
+								<span class="title block">上架商品</span>
+								<div class="flex-1"></div>
+								<span class="value block">86</span>
+							</dt>
+						</dl>
+					</div>
+					<div class="section-start-nav-rows box horizontal">
+						<dl class="flex-1 box horizontal">
+							<dd>
+								<img src="./assets/images/a_23.png" alt="">
+							</dd>
+							<dt class="box vertical">
+								<span class="title block">库存商品</span>
+								<div class="flex-1"></div>
+								<span class="value block">115</span>
+							</dt>
+						</dl>
+						<dl class="flex-1 box horizontal">
+							<dd>
+								<img src="./assets/images/a_21.png" alt="">
+							</dd>
+							<dt class="box vertical">
+								<span class="title block">草稿箱</span>
+								<div class="flex-1"></div>
+								<span class="value block">15</span>
+							</dt>
+						</dl>
+					</div>
+					<div class="section-start-nav-rows box horizontal">
+						<dl class="flex-1 box horizontal">
+							<dd>
+								<img src="./assets/images/a_27.png" alt="">
+							</dd>
+							<dt class="box vertical">
+								<span class="title block">财务管理</span>
+								<div class="flex-1"></div>
+								<span class="value block">我的钱包、资金明细</span>
+							</dt>
+						</dl>
+						<dl class="flex-1 box horizontal" ui-sref="Comment">
+							<dd>
+								<img src="./assets/images/a_29.png" alt="">
+							</dd>
+							<dt class="box vertical">
+								<span class="title block">粉丝</span>
+								<div class="flex-1"></div>
+								<span class="value block">及时回复客户评论</span>
+							</dt>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="section-message-box padding-h border-box bg-white">
+				<div class="section-message-box-into box horizontal box-align-center">
+					<img src="./assets/images/a_33.png" alt="">
+					<span class="flex-1 block">
+						消息箱(<span class="message-count">39</span>)
+					</span>
+					<a href="" class="block into-btn">
+						<img src="assets/images/a_10.png" alt="">
+					</a>
+				</div>
+				<div class="section-message-box-rows box horizontal padding-v">
+					<div class="message-box-rows-left">
+						<img src="./assets/images/a_37.png" alt="">
+					</div>
+					<div class="message-box-rows-center box vertical flex-1">
+						<h1 class="title color-black text-normal">物流消息</h1>
+						<div class="flex-1"></div>
+						<span class="value color-999 block full-w">
+							您购买的【商品名称】已发货,请注意查收!
+						</span>
+					</div>
+					<div class="message-box-rows-right date box vertical box-pack-center">
+						<span class="value">08:20</span>
+					</div>
+				</div>
+				<div class="section-message-box-rows box horizontal padding-v">
+					<div class="message-box-rows-left">
+						<img src="./assets/images/a_40.png" alt="">
+					</div>
+					<div class="message-box-rows-center box vertical flex-1">
+						<h1 class="title color-black text-normal">交易消息</h1>
+						<div class="flex-1"></div>
+						<span class="value color-999 block full-w">
+							【商品名称】订单已退款,请注意查收!
+						</span>
+					</div>
+					<div class="message-box-rows-right date box vertical box-pack-center">
+						<span class="value">16/08/10</span>
+					</div>
+				</div>
+				<div class="section-message-box-rows box horizontal padding-v">
+					<div class="message-box-rows-left">
+						<img src="./assets/images/a_40.png" alt="">
+					</div>
+					<div class="message-box-rows-center box vertical flex-1">
+						<h1 class="title color-black text-normal">交易消息</h1>
+						<div class="flex-1"></div>
+						<span class="value color-999 block full-w">
+							【商品名称】订单已退款,请注意查收!
+						</span>
+					</div>
+					<div class="message-box-rows-right date box vertical box-pack-center">
+						<span class="value">16/08/10</span>
+					</div>
+				</div>
+				<div class="section-message-box-rows box horizontal padding-v">
+					<div class="message-box-rows-left">
+						<img src="./assets/images/a_40.png" alt="">
+					</div>
+					<div class="message-box-rows-center box vertical flex-1">
+						<h1 class="title color-black text-normal">交易消息</h1>
+						<div class="flex-1"></div>
+						<span class="value color-999 block full-w">
+							【商品名称】订单已退款,请注意查收!
+						</span>
+					</div>
+					<div class="message-box-rows-right date box vertical box-pack-center">
+						<span class="value">16/08/10</span>
+					</div>
+				</div>
+				<div class="section-message-box-rows box horizontal padding-v">
+					<div class="message-box-rows-left">
+						<img src="./assets/images/a_40.png" alt="">
+					</div>
+					<div class="message-box-rows-center box vertical flex-1">
+						<h1 class="title color-black text-normal">交易消息</h1>
+						<div class="flex-1"></div>
+						<span class="value color-999 block full-w">
+							【商品名称】订单已退款,请注意查收!
+						</span>
+					</div>
+					<div class="message-box-rows-right date box vertical box-pack-center">
+						<span class="value">16/08/10</span>
+					</div>
+				</div>
+			</div>
+			<div class="no-more text-center padding-v color-666 bg-white border-top-default">没有更多了</div>
+		</section>
+		<footer class="footer box horizontal border-box overflow-hide border-top-default">
+			<dl class="flex-1 text-center current">
+				<dd>
+					<a ui-sref="index"><img src="./assets/public/images/footer-1.png" width="28" alt=""></a>
+				</dd>
+				<dt>
+					<a ui-sref="index">首页</a>
+				</dt>
+			</dl>
+			<dl class="flex-1 text-center current">
+				<dd>
+					<a ui-sref="yc_help"><img src="./assets/public/images/footer-2.png" width="22" alt=""></a>
+				</dd>
+				<dt>
+					<a ui-sref="yc_help">优橙协助</a>
+				</dt>
+			</dl>
+			<a href="" class="inline-block flex-1">
+				<img src="./assets/public/images/footer-3.png" width="45" height="40" alt="">
+			</a>
+			<dl class="flex-1 text-center current">
+				<dd>
+					<a ui-sref="dingdan_status"><img src="./assets/public/images/footer-4.png" width="22" alt=""></a>
+				</dd>
+				<dt>
+					<a ui-sref="dingdan_status">订单状态</a>
+				</dt>
+			</dl>
+			<dl class="flex-1 text-center current">
+				<dd>
+					<a ui-sref="my_store">
+						<img src="./assets/public/images/footer-5.png" width="24" alt="">
+					</a>
+				</dd>
+				<dt> 
+					<a ui-sref="my_store">我的店铺</a>
+				</dt>
+			</dl>
+		</footer>
+	</div>
+</body>
+
+</html>

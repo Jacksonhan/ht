@@ -1,0 +1,34 @@
+section
+{
+	background : #f2f2f2;
+}
+section::-webkit-scrollbar
+{
+	width : 0;
+}
+section::-ms-scrollbar
+{
+	width : 0;
+}
+section::scrollbar
+{
+	width : 0;
+}
+section .my-shop-section-group
+{
+	width : 100%;
+	height : auto;
+	margin-top : 10px;
+	background : #fff;
+}
+section .my-shop-section-group .my-shop-section-group-row
+{
+	padding-left : 10px;
+	border-top : 1px solid #e1e1e1;
+	border-left : none;
+	border-right : none;
+}
+section .my-shop-section-group .my-shop-section-group-row .my-shop-section-group-row-left
+{
+	height : 24px;
+}

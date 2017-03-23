@@ -1,0 +1,152 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%; }
+
+.spc-24 {
+  font-size: 24px; }
+
+.spc-12 {
+  font-size: 12px;
+  color: #b9b9b9; }
+
+.spc-11 {
+  font-size: 20px;
+  color: #76bff2; }
+
+html, body, .warp {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.warp header {
+  width: 100%;
+  height: 36px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal; }
+  .warp header .header_left {
+    width: 29px;
+    height: 36px;
+    background: none;
+    line-height: 36px;
+    text-align: center; }
+  .warp header .header_center {
+    -webkit-box-flex: 1;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px; }
+  .warp header .header_right {
+    width: 34px;
+    height: 36px;
+    background: none;
+    line-height: 36px;
+    text-align: center; }
+.warp section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2;
+  overflow-y: auto; }
+  .warp section::-webkit-scrollbar {
+    width: 0; }
+  .warp section .main {
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    margin-top: 4px;
+    padding-top: 7px; }
+    .warp section .main p {
+      -webkit-transform: scale(0.9); }
+      .warp section .main p span {
+        color: #feb584; }
+  .warp section .main2 {
+    width: 100%;
+    height: 222px;
+    background: #ffffff;
+    margin-top: 5px; }
+    .warp section .main2 .main2_top {
+      width: 100%;
+      height: 25px;
+      background: #ffffff;
+      border-bottom: 1px solid #fafafa;
+      padding-left: 16px;
+      box-sizing: border-box;
+      line-height: 25px;
+      font-size: 14px; }
+    .warp section .main2 .main2_center {
+      width: 100%;
+      height: 85px;
+      background: #ffffff;
+      border-bottom: 1px solid #fafafa;
+      padding-left: 16px;
+      box-sizing: border-box; }
+      .warp section .main2 .main2_center dl {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        position: relative; }
+        .warp section .main2 .main2_center dl dt {
+          width: 63px;
+          height: 63px;
+          background: none;
+          padding-top: 7px; }
+        .warp section .main2 .main2_center dl dd {
+          -webkit-transform: scale(0.9);
+          -webkit-box-flex: 1; }
+          .warp section .main2 .main2_center dl dd b {
+            color: #ccc;
+            -webkit-transform: scale(0.5); }
+          .warp section .main2 .main2_center dl dd ul {
+            position: absolute;
+            right: -10px;
+            top: 30px; }
+    .warp section .main2 .main2_bottom {
+      width: 100%;
+      height: 27px;
+      background: none; }
+      .warp section .main2 .main2_bottom .main2_bottom_top {
+        width: 100%;
+        height: 24px;
+        background: none;
+        text-align: right;
+        border-bottom: 1px solid #fafafa; }
+  .warp section .main3 {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin-top: 5px; }
+    .warp section .main3 .main3_top {
+      width: 100%;
+      height: auto;
+      background: none;
+      border-bottom: 1px solid #fafafa;
+      padding-left: 16px;
+      box-sizing: border-box;
+      line-height: 25px;
+      font-size: 14px; }
+    .warp section .main3 .main3_center {
+      width: 100%;
+      height: auto;
+      background: none;
+      border-bottom: 1px solid #fafafa;
+      padding-left: 16px;
+      box-sizing: border-box; }
+      .warp section .main3 .main3_center p {
+        color: #afafaf; }
+        .warp section .main3 .main3_center p img {
+          padding-right: 4px; }
+        .warp section .main3 .main3_center p b {
+          color: #ff914c; }
+    .warp section .main3 .main3_bottom {
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+      line-height: 30px;
+      text-align: right; }
+      .warp section .main3 .main3_bottom span {
+        border: 1px solid #ff9548;
+        color: #ff9548;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 0 4px; }
+
+/*# sourceMappingURL=tongyituihuotuikuan.css.map */

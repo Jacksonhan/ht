@@ -1,0 +1,200 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($name,$val,$val2,$val3){
+    .#{$name}-24{font-size: $val;}
+    .#{$name}-12{font-size: $val2;color: #b9b9b9;}
+    .#{$name}-11{font-size: $val3;color: #76bff2;}    
+}
+@include font(spc,24px,12px,20px);
+html,body,.warp{
+    @include full(100%,100%,none);
+    @include box();
+}
+.warp{
+    header{
+        @include full(100%,37px,#f7f7f7);
+        @include box(horizontal);
+        .header_left{
+            @include full(30px,37px,none);
+            line-height: 37px;
+            text-align: center;
+        }
+        .header_center{
+            -webkit-box-flex: 1;
+            line-height: 37px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .header_right{
+            @include full(36px,37px,none);
+            line-height: 37px;
+            text-align: center;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f2f2f2;
+        .main{
+            @include full(100%,auto,white);
+            ul{
+                .l1{
+                    padding-top: 6px;
+//                  padding-bottom: 8px;
+                    box-sizing: border-box;
+                    img{
+                        padding-left: 14px;
+                        padding-right: 8px;
+                    }
+                }
+                .l2{
+                    padding-bottom: 8px;
+                    box-sizing: border-box;
+                    img{
+                        padding-left: 14px;
+                        padding-right: 8px;
+                    }
+                }
+            }
+        }
+        .main2{
+            @include full(100%,185px,white);
+            @include box;
+            border-top: 4px solid #f2f2f2;
+            ul{
+                @include full(100%,165px,none);
+                @include box;
+                padding-left: 8px;
+                box-sizing: border-box;
+                .li1{
+                    @include full(100%,28px,none);
+                    @include box(horizontal);
+                    line-height: 28px;
+                    border-bottom: 1px solid #f2f2f2;
+                    p{
+                        @include full(55px,28px,none);
+                    }
+                    span{
+                        display:block;
+                        -webkit-box-flex: 1;
+                    }
+                }
+                .li2{
+                    @include full(100%,55px,none);
+                    @include box(horizontal);
+                    border-bottom: 1px solid #f2f2f2;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    p{
+                        @include full(55px,28px,none);
+                    }
+                    span{
+                        display:block;
+                        -webkit-box-flex: 1;
+                    }
+                }
+            }
+        }
+        .main3{
+            @include full(100%,auto,white);
+            ul{
+                border: 1px solid #f2f2f2;
+                border-left: none;
+                margin-left: 8px;
+                box-sizing: border-box;
+                li{
+                    p{
+                        padding-top: 9px;
+                        padding-bottom: 16px;
+                        box-sizing: border-box;
+                    }
+                    img{
+                        padding-bottom: 11px;
+                        padding-right: 12px;
+                    }
+                }
+            }
+            ol{
+                height: auto;
+                padding-left: 9px;
+                box-sizing: border-box;
+                li{
+                    @include full(100%,auto,none);
+                    @include box(horizontal);
+                    p{
+                        @include full(55px,10px,none);
+                    }
+                    span{
+                            display: block;
+                            -webkit-box-flex: 1;
+                            text-align: right;
+                        }
+                }
+                .ol2{
+                    color: #ff7d1b;
+                }
+            }
+        }
+    }
+    footer{
+        @include full(100%,auto,none);
+        @include box(horizontal);
+        .footer_left{
+            @include full(140px,auto,none);
+            h2{
+                padding-left: 10px;
+                font-weight: bold;
+            }
+            p{
+                color: #adadad;
+                span{
+                    color: #ff7d1b;
+                }
+            }
+        }
+        .footer_right{
+            -webkit-box-flex: 1;
+            @include box(horizontal);
+            .footer_right_center{
+                 @include box(horizontal);
+                 height: 27px;
+                 margin:0 auto;
+//               border: 1px solid #fd9647;
+                 margin-top: 12px;
+                 margin-bottom: 12px;
+                 text-align: center;
+                 .footer_right_center_left{
+                     @include full(78px,27px,none);
+                     line-height: 27px;
+                     border-right:1px solid #fd9647;
+                     font-size: 14px;
+                     font-weight: bold;
+                     color: #ff8328;
+                     border: 1px solid #fd9647;
+                     border-radius: 5px;
+                     margin-right: 7px;
+                 }
+                 .footer_right_center_right{
+                     @include full(78px,27px,none);
+                     line-height: 27px;
+                     border-right:1px solid #fd9647;
+                     font-size: 14px;
+                     font-weight: bold;
+                     color: #ff8328;
+                     border: 1px solid #fd9647;
+                     border-radius: 5px;
+                 }
+             }
+        }
+    }
+}

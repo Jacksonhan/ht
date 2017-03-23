@@ -1,0 +1,150 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($name,$val,$val2,$val3){
+    .#{$name}-24{font-size: $val;}
+    .#{$name}-12{font-size: $val2;color: #b9b9b9;}
+    .#{$name}-11{font-size: $val3;color: #76bff2;}    
+}
+@include font(spc,24px,12px,20px);
+html,body,.warp{
+    @include full(100%,100%,none);
+    @include box();
+} 
+.warp{
+    header{
+        @include full(100%,36px,#f7f7f7);
+        @include box(horizontal);
+        .header_left{
+            @include full(29px,36px,none);
+            line-height: 36px;
+            text-align: center;
+        }
+        .header_center{
+            -webkit-box-flex: 1;
+            line-height: 36px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .header_right{
+            @include full(34px,36px,none);
+            line-height: 36px;
+            text-align: center;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f2f2f2;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        .main{
+            @include full(100%,100px,#ffffff);
+            margin-top: 4px;
+            padding-top: 7px;
+            p{
+                -webkit-transform: scale(0.9);
+                span{
+                    color: #feb584;
+                }
+            }
+        }
+        .main2{
+            @include full(100%,222px,#ffffff);
+            margin-top: 5px;
+            .main2_top{
+                @include full(100%,25px,#ffffff);
+                border-bottom: 1px solid #fafafa;
+                padding-left: 16px;
+                box-sizing: border-box;
+                line-height: 25px;
+                font-size: 14px;
+            }
+            .main2_center{
+                @include full(100%,85px,#ffffff);
+                border-bottom: 1px solid #fafafa;
+                padding-left: 16px;
+                box-sizing: border-box;
+                dl{
+                    @include box(horizontal);
+                    position: relative;
+                    dt{
+                       @include full(63px,63px,none);
+                       padding-top: 7px;
+                    }
+                    dd{
+                        -webkit-transform: scale(0.9);
+                        -webkit-box-flex: 1;
+                        b{
+                            color: #ccc;
+                            -webkit-transform: scale(0.5);
+                        }
+                        ul{
+                            position: absolute;
+                            right: -10px;
+                            top: 30px;
+                        }
+                    }
+                }
+            }
+            .main2_bottom{
+                @include full(100%,27px,none);
+                .main2_bottom_top{
+                    @include full(100%,24px,none);
+                    text-align: right;
+                    border-bottom: 1px solid #fafafa;
+                }
+            }
+        }
+        .main3{
+            @include full(100%,141px,#ffffff);
+            margin-top: 5px;
+            .main3_top{
+                @include full(100%,24px,none);
+                border-bottom: 1px solid #fafafa;
+                padding-left: 16px;
+                box-sizing: border-box;
+                line-height: 25px;
+                font-size: 14px;
+            }
+            .main3_center{
+                @include full(100%,87px,none);
+                border-bottom: 1px solid #fafafa;
+                padding-left: 16px;
+                padding-bottom: 10px;
+                p{
+                    color: #afafaf;
+                    img{
+                        padding-right: 4px;
+                    }
+                    b{
+                        color: #ff914c;
+                    }
+                }
+            }
+            .main3_bottom{
+                @include full(100%,30px,#ffffff);
+                line-height: 30px;
+                text-align: right;
+                    span{
+                        border: 1px solid #ff9548;
+                        color: #ff9548;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        padding: 0 4px;
+                    }
+                }
+        }
+    }
+}

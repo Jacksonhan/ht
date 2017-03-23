@@ -1,0 +1,32 @@
+section
+{
+	background : #f2f2f2;
+}
+section::-webkit-scrollbar
+{
+	width : 0;
+}
+section::-ms-scrollbar
+{
+	width : 0;
+}
+section::scrollbar
+{
+	width : 0;
+}
+
+section .section-profile
+{
+	top : -22.5px;
+}
+
+section .section-must-msg
+{
+	margin-top : 5px;
+	background : #fff;
+}
+section .section-must-msg-row,
+section .section-row
+{
+	margin-top : 5px;
+}

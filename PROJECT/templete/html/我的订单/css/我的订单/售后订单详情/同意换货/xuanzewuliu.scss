@@ -1,0 +1,93 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($name,$val,$val2,$val3){
+    .#{$name}-24{font-size: $val;}
+    .#{$name}-12{font-size: $val2;color: #b9b9b9;}
+    .#{$name}-11{font-size: $val3;color: #76bff2;}    
+}
+@include font(spc,24px,12px,20px);
+html,body,.warp{
+    @include full(100%,100%,none);
+    @include box();
+} 
+.warp{
+    header{
+        @include full(100%,38px,#f7f7f7);
+        @include box(horizontal);
+        border-bottom: 1px solid #bfbfbf;
+        .header_left{
+            @include full(30px,38px,none);
+            line-height: 38px;
+            text-align: center;
+        }
+        .header_center{
+            -webkit-box-flex: 1;
+            line-height: 38px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .header_right{
+            @include full(50px,38px,none);
+            line-height: 38px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f2f2f2;
+        .main{
+            @include full(100%,28px,#ffffff);
+            padding-left: 9px;
+            box-sizing: border-box;
+            margin-top: 9px;
+            input{
+                @include full(100%,28px,none);
+                border:  none;
+                outline: none;
+                line-height: 28px;
+            }
+        }
+        .main2{
+            @include full(100%,25px,#ffffff);
+            @include box(horizontal);
+            padding-left: 9px;
+            box-sizing: border-box;
+            margin-top: 4px;
+            border-bottom: 1px solid #f7f7f7;
+            line-height: 25px;
+                .main2_left{
+                    -webkit-box-flex: 1;
+                }
+                .main2_right{
+                    @include full(30px,25px,none);
+                }
+            }
+            .main3{
+                @include full(100%,auto,#ffffff);
+                padding-left: 9px;
+                box-sizing: border-box;
+                ul{
+                    @include full(100%,auto,none);
+                    @include box;
+                    li{
+                        width: 100%;
+                        height: 21px;
+                        -webkit-box-flex: 1;
+                        border-bottom: 1px solid #fafafa;
+                    }
+                }
+            }
+    }
+}

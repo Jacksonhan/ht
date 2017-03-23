@@ -1,0 +1,86 @@
+@import "reset.css";
+@mixin full($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin box($ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: $ver;
+}
+html{
+    font-size: 62.5%;
+}
+@mixin font($name,$val,$val2,$val3){
+    .#{$name}-24{font-size: $val;}
+    .#{$name}-12{font-size: $val2;color: #b9b9b9;}
+    .#{$name}-11{font-size: $val3;color: #76bff2;}     
+}
+@include font(spc,24px,12px,20px);
+html,body,.warp{
+    @include full(100%,100%,none);
+    @include box();
+} 
+.warp{
+    header{
+        @include full(100%,35px,#f7f7f7);
+        @include box(horizontal);
+        .header_left{
+            @include full(30px,35px,none);
+            line-height: 35px;
+            text-align: center;
+        }
+        .header_center{
+            -webkit-box-flex: 1;
+            line-height: 35px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .header_right{
+            @include full(52px,35px,none);
+            line-height: 35px;
+            text-align: center;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f2f2f2;
+        .self{
+            @include full(100%,245px,none);
+            padding-left: 9px;
+            box-sizing: border-box;
+            .self_top{
+                @include full(100%,25px,none);
+                line-height: 25px;
+                font-weight: bold;
+            }
+            .self_bottom{
+                @include full(100%,220px,none);
+                textarea{
+                    border-radius: 5px;
+                }
+            }
+        }
+        .photo{
+            @include full(100%,95px,none);
+            padding-left: 9px;
+            box-sizing: border-box;
+            .photo_top{
+                @include full(100%,27px,none);
+                line-height: 27px;
+                font-weight: bold;
+            }
+            .photo_bottom{
+                @include full(100%,68px,none);
+                span{
+                    display: inline-block;
+                    @include full(65px,65px,#f2f2fa);
+                    text-align: center;
+                    border: 2px solid #bfbfbf;
+                    border-radius: 5px;
+                    line-height: 65px;
+                }
+            }
+        }
+    }
+}
