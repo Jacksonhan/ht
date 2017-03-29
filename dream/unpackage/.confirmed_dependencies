@@ -1,0 +1,85 @@
+{
+	"index.html": {
+		"resources": [
+			"images/p4.jpg",
+			"images/111.jpg",
+			"images/nav.png",
+			"images/move-top.png",
+			"images/p2.jpg",
+			"css/style.css",
+			"js/move-top.js",
+			"js/easing.js",
+			"images/222.jpg",
+			"images/p3.jpg",
+			"fonts/PoiretOne-Regular.ttf",
+			"css/bootstrap.css",
+			"js/jquery-1.8.3.min.js",
+			"images/p1.jpg",
+			"images/999.png",
+			"fonts/OpenSans-Regular.ttf",
+			"images/333.jpg",
+			"images/555.jpg",
+			"images/IMG_0040.JPG",
+			"about.html"
+		],
+		"refer": [
+			"about.html"
+		]
+	},
+	"about.html": {
+		"resources": [
+			"images/t4.jpg",
+			"images/t1.jpg",
+			"images/t3.jpg",
+			"images/t2.jpg",
+			"images/c2.jpg",
+			"images/p5.jpg",
+			"images/banner3.jpg",
+			"designers.html",
+			"images/c1.jpg",
+			"images/list-arrow.png"
+		],
+		"refer": [
+			"designers.html"
+		]
+	},
+	"designers.html": {
+		"resources": [
+			"images/p9.jpg",
+			"images/p7.jpg",
+			"images/p8.jpg",
+			"images/p6.jpg",
+			"gallery.html"
+		],
+		"refer": [
+			"gallery.html"
+		]
+	},
+	"gallery.html": {
+		"resources": [
+			"css/jquery.lightbox.css",
+			"images/p12.jpg",
+			"images/p15.jpg",
+			"images/p13.jpg",
+			"images/p11.jpg",
+			"images/p18.jpg",
+			"images/p16.jpg",
+			"typo.html",
+			"images/p14.jpg",
+			"images/p10.jpg",
+			"images/p17.jpg",
+			"js/jquery.lightbox.js"
+		],
+		"refer": [
+			"typo.html"
+		]
+	},
+	"typo.html": {
+		"resources": [
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}
